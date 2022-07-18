@@ -23,7 +23,8 @@ class UserCard {
 		// this.firstName and this.lastName not needed here, but they would work.
 	}
 
-	// Override decorator is a good practice, activates override check.
+	// Override annotation is a good practice, activates override check.
+	// In TypeScript it's called "decorator" instead of "annotation".
 	@Override
 	public String toString() {
 		// return super.toString();
