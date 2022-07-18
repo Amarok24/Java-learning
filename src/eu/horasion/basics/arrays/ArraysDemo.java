@@ -41,7 +41,15 @@ public class ArraysDemo {
 }
 
 /*
- * 
- * 0 0 0 0 nullableInteger is null 52 38 90 length of prefilledField is 3
- * 
- */
+
+0
+0
+0
+0
+nullableInteger is null
+85
+15
+98
+length of prefilledField is 3
+
+*/
