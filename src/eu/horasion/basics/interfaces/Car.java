@@ -13,9 +13,10 @@ interface IElectricMachine {
 	// Interface *methods* can only be:
 	// public, private, abstract, default, static or strictfp.
 	// Parameter names don't matter here, only the parameter types.
+	// Methods are "abstract" by default, no need to write the modifier.
 	void setVoltage(short v);
 
-	abstract short getVoltage();
+	short getVoltage();
 }
 
 // An abstract class cannot be instantiated, it must be extended.

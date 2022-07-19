@@ -6,7 +6,7 @@ import eu.horasion.basics.interfaces.HondaElectric;
 public class CarFactoryDemo {
 
 	public static void main(String[] args) {
-		Car redHonda, redHonda2, refToRedHonda; // Not good, just for demonstration
+		Car redHonda, redHonda2, refToRedHonda;
 		HondaElectric silverHonda;
 
 		// An object of type 'Car' can hold a new instance of 'HondaFactory' (or
