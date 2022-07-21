@@ -16,9 +16,8 @@ public class ArraysDemo {
 		int[] randomField; // Not initialised, primitive types are NOT nullable!
 		// int nonNullable = 3; // primitive int can never be null
 		// Integer[] nullIntegerAr = null;//Wrappers of primitive types are nullable
-		Integer nullableInteger = null; // Nullable objects have no default value
-		                                // null, they still have to be set to null
-		                                // in order to test for null.
+		Integer nullableInteger = null;	// // All objects are nullable!
+		// Local variables are not given default initial values. They must be initialized explicitly before they are used. Only instance + class variables and array components have default initial values.
 
 		for(int i : field) {
 			System.out.println(i); // will print all zeros
