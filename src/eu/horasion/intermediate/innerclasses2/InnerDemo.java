@@ -1,7 +1,7 @@
-package eu.horasion.intermediate.innerclasses;
+package eu.horasion.intermediate.innerclasses2;
 
-// To access the inner class of BusTicket we could import it like this:
-// import eu.horasion.intermediate.innerclasses.BusTicket.Builder;
+// This is a refactored innerclasses demo called innerclasses2.
+// It avoids duplication of class fields.
 
 public class InnerDemo {
 
@@ -26,8 +26,8 @@ public class InnerDemo {
 
 /*
 
-From: Prague, To: Berlin, Vehicle #524, Catering true, TV false
+From: Prague, To: Berlin, Vehicle #545, Catering true, TV false
 
-From: Pilsen, To: Hamburg, Vehicle #629, Catering false, TV true
+From: Pilsen, To: Hamburg, Vehicle #460, Catering false, TV true
 
 */

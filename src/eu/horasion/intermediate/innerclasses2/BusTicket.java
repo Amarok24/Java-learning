@@ -1,50 +1,50 @@
-package eu.horasion.intermediate.innerclasses;
+package eu.horasion.intermediate.innerclasses2;
+
 
 import java.util.Random;
 
 // Inner class example with the "builder pattern", which is very common.
-public class BusTicket extends Ticket {
+public class BusTicket {
 
-	// fromLocation, toLocation, vehicleNumber are in abstract class Ticket
-	private boolean withCatering;
-	private boolean withTV;
+	// Compared to innerclasses demo there are no class field duplications,
+	// we only keep the Builder object reference here.
+	private Builder rawTicket;
 
-	private BusTicket(Builder builder) {
-		this.fromLocation = builder.fromLocation;
-		this.toLocation = builder.toLocation;
-		this.vehicleNumber = builder.vehicleNumber;
-		this.withCatering = builder.withCatering;
-		this.withTV = builder.withTV;
+	private BusTicket(Builder rawTicket) {
+		this.rawTicket = rawTicket;
 	}
 
 	public String getFromLocation() {
-		return fromLocation;
+		return rawTicket.fromLocation;
 	}
 
 	public String getToLocation() {
-		return toLocation;
+		return rawTicket.toLocation;
 	}
 
 	public int getVehicleNumber() {
-		return vehicleNumber;
+		return rawTicket.vehicleNumber;
 	}
 
 	public boolean isWithCatering() {
-		return withCatering;
+		return rawTicket.withCatering;
 	}
 
 	public boolean isWithTV() {
-		return withTV;
+		return rawTicket.withTV;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("From: %s, To: %s, Vehicle #%d, Catering %b, TV %b\n", fromLocation, toLocation, vehicleNumber, withCatering, withTV);
+		return String.format("From: %s, To: %s, Vehicle #%d, Catering %b, TV %b\n", getFromLocation(), getToLocation(), getVehicleNumber(), isWithCatering(), isWithTV());
 	}
+
+	// The whole inner class here is *without* any modifications,
+	// 100% same as in the innerclasses demo.
 
 	// This inner class must be 'static' because we need access to it from
 	// outside even before a new instance of BusTicket is created.
-	public static class Builder {
+	public static class Builder extends Ticket {
 		// Following class fields are not static, so they are instance variables.
 		// Class fields will get default values if not initialised.
 		String fromLocation;

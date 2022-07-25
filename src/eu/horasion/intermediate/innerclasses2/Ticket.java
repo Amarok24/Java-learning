@@ -1,4 +1,4 @@
-package eu.horasion.intermediate.innerclasses;
+package eu.horasion.intermediate.innerclasses2;
 
 abstract class Ticket {
 
