@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Launch DateTimeDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.intermediate.datetimedemo.DateTimeDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
 			"name": "Launch Current File",
 			"request": "launch",
 			"mainClass": "${file}"
