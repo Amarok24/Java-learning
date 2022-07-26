@@ -1,7 +1,7 @@
 package eu.horasion.intermediate.innerclasses2;
 
 // This is a refactored innerclasses demo called innerclasses2.
-// It avoids duplication of class fields.
+// It avoids duplication of class fields, see BusTicket class.
 
 public class InnerDemo {
 

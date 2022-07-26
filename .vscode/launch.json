@@ -1,0 +1,119 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Launch Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"type": "java",
+			"name": "Launch App",
+			"request": "launch",
+			"mainClass": "App",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch ArraysDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.arrays.ArraysDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch EnumsDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.enums.EnumsDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch FileHandlingDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.files.FileHandlingDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch InterfaceDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.interfaces.InterfaceDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch LambdaDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.lambda.LambdaDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch OopDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.oop.OopDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch OopArrayDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.oop.array.OopArrayDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch CarFactoryDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.oop.carfactory.CarFactoryDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch RegexDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.regex.RegexDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch ReplaceFirstDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.regex.ReplaceFirstDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch ThreadDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.threads.ThreadDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch UserInputDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.basics.userinput.UserInputDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch InnerDemo",
+			"request": "launch",
+			"mainClass": "eu.horasion.intermediate.innerclasses.InnerDemo",
+			"projectName": "Java-learning_be613d2f"
+		},
+		{
+			"type": "java",
+			"name": "Launch InnerDemo(1)",
+			"request": "launch",
+			"mainClass": "eu.horasion.intermediate.innerclasses2.InnerDemo",
+			"projectName": "Java-learning_be613d2f"
+		}
+	]
+}

@@ -9,6 +9,8 @@ public class BusTicket extends Ticket {
 	private boolean withCatering;
 	private boolean withTV;
 
+	// The constructor is private, BusTicket.Builder.build() is used
+	// to create a new instance of a BusTicket.
 	private BusTicket(Builder builder) {
 		this.fromLocation = builder.fromLocation;
 		this.toLocation = builder.toLocation;
@@ -59,17 +61,17 @@ public class BusTicket extends Ticket {
 			vehicleNumber = new Random().nextInt(1000); // 0..999
 		}
 
-		public Builder wantedCatering(boolean withCatering) {
+		Builder wantedCatering(boolean withCatering) {
 			this.withCatering = withCatering;
 			return this;
 		}
 
-		public Builder wantedTV(boolean withTV) {
+		Builder wantedTV(boolean withTV) {
 			this.withTV = withTV;
 			return this;
 		}
 
-		public BusTicket build() {
+		BusTicket build() {
 			return new BusTicket(this);
 		}
 

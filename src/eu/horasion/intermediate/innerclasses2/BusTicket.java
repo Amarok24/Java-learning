@@ -1,15 +1,16 @@
 package eu.horasion.intermediate.innerclasses2;
 
-
 import java.util.Random;
 
-// Inner class example with the "builder pattern", which is very common.
+// 2nd inner class example with the "builder pattern".
 public class BusTicket {
 
-	// Compared to innerclasses demo there are no class field duplications,
-	// we only keep the Builder object reference here.
+	// Compared to innerclasses (v1) demo there are no class field duplications,
+	// I only keep the Builder object reference here.
 	private Builder rawTicket;
 
+	// The constructor is private, BusTicket.Builder.build() is used
+	// to create a new instance of a BusTicket.
 	private BusTicket(Builder rawTicket) {
 		this.rawTicket = rawTicket;
 	}
@@ -39,8 +40,8 @@ public class BusTicket {
 		return String.format("From: %s, To: %s, Vehicle #%d, Catering %b, TV %b\n", getFromLocation(), getToLocation(), getVehicleNumber(), isWithCatering(), isWithTV());
 	}
 
-	// The whole inner class here is *without* any modifications,
-	// 100% same as in the innerclasses demo.
+	// The whole inner class here is almost *without* any modifications,
+	// only the "extends Ticket" has been added compared to innerclasses demo.
 
 	// This inner class must be 'static' because we need access to it from
 	// outside even before a new instance of BusTicket is created.
@@ -59,17 +60,17 @@ public class BusTicket {
 			vehicleNumber = new Random().nextInt(1000); // 0..999
 		}
 
-		public Builder wantedCatering(boolean withCatering) {
+		Builder wantedCatering(boolean withCatering) {
 			this.withCatering = withCatering;
 			return this;
 		}
 
-		public Builder wantedTV(boolean withTV) {
+		Builder wantedTV(boolean withTV) {
 			this.withTV = withTV;
 			return this;
 		}
 
-		public BusTicket build() {
+		BusTicket build() {
 			return new BusTicket(this);
 		}
 
