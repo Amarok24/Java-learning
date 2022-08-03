@@ -3,7 +3,7 @@ package eu.horasion.intermediate.superobject;
 /**
  * Any class which should be cloneable MUST implement the Cloneable interface
  * and also override the clone method in the way shown below.
- * Furthermore the usage of .clone() then must be done with type casting
+ * Furthermore the usage of .clone() must be later done with type casting
  * to this class, see the main method in SuperObjectDemo.java
  */
 public class IdCard implements Cloneable {
