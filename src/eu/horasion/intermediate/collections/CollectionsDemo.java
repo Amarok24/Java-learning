@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Vector;
+
+// A small showcase of ArrayList, List and Vector.
 
 public class CollectionsDemo {
 
@@ -11,6 +14,7 @@ public class CollectionsDemo {
 		arrayListDemo();
 		randomSequenceDemo();
 		intListDemo();
+		vectorDemo();
 	}
 
 	static void arrayListDemo() {
@@ -56,6 +60,9 @@ public class CollectionsDemo {
 		mutableList.set(0, 5); // list is fixed-size, but modifiable
 		//mutableList.add(30); // throws UnsupportedOperationException
 
+		// The 'Collections' class consists exclusively of static methods
+		// that operate on or return collections.
+		// https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html
 		Collections.shuffle(mutableList);
 
 		System.out.println("\nimmutableList content:");
@@ -102,6 +109,21 @@ public class CollectionsDemo {
 
 		System.out.println("\nintView content println:");
 		System.out.println(intView); // [99, 2, 3, 77]
+	}
+
+	static void vectorDemo() {
+		// Vector is basically a thread-safe version of an ArrayList,
+		// with some added methods and functionalities.
+		// https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Vector.html
+		Vector<String> vectorList = new Vector<>();
+
+		vectorList.add("first entry");
+		vectorList.add("second entry");
+		vectorList.add("third entry");
+
+		String s = vectorList.lastElement();
+		System.out.println(s); // "third entry"
+		System.out.println(vectorList.contains(s)); // true
 	}
 
 }
